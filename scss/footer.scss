@@ -1,0 +1,28 @@
+.footer {
+    background-color: #000;
+}
+.footer-content {
+    @include flexbox();
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.footer-content__column {
+    flex: 0 0 50%;
+    &:last-child {
+        @include flexbox();
+        justify-content: flex-end;
+    }
+}
+.footer-content__text {
+    color: grey;
+    font-size: 15px;
+    & a {
+        color: grey;
+        text-decoration: underline;
+    }
+}
+.footer-content__logo {
+    padding: 35px 0px;
+    filter: invert(100%);
+}

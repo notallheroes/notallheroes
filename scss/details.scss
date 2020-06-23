@@ -1,0 +1,144 @@
+.details {
+    font-family: bebas;
+    @include flexbox();
+    background-color: #000;
+}
+.details__column {
+    flex: 1 1 50%;
+    @media (max-width:$md2+px) {
+        flex: 0 0 100%;
+        
+	}
+}
+.details__title {
+    padding-top: 30px;
+    line-height: 25px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-family: bebas;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 5px;
+    @media (max-width:$md1+px) {
+        font-size: 25px;
+    }
+    @media (max-width:$md2+px) {
+        font-size: 23px;
+	}
+    
+}
+.details__column-body {
+    text-align: left;
+    margin-right: 0px;
+    margin-left: auto;
+    max-width: 440px;
+    
+    @media (max-width:$md1+px) {
+        width: 378px;
+    }
+    @media (max-width:$md2+px) {
+        margin-left: 20px;
+        
+	}
+}
+.details__text {
+    padding-right: 95px;
+    padding-top: 10px;
+    
+    padding-bottom: 30px;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    font-size: 18px;
+    color: white;
+    @media (max-width:$md1+px) {
+        font-size: 14px;
+    }
+    @media (max-width:$md2+px) {
+        font-size: 12px;
+	}
+}
+.details__image {
+    height: 100%;
+    @media (max-width:$md2+px) {
+        display: none;
+        
+	}
+}
+.kuzovbmw__image {
+    background: url(../img/detailsbmw/kuzov.jpg) no-repeat 50%;
+    background-size: cover;
+    transform: scale(-1, 1);
+}
+
+//plitka==============================
+
+.plitka {
+    @include flexbox();
+    margin: 25px -10px;
+    margin-top: 25px;
+    
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+    @media (max-width:$md2+px) {
+        justify-content: flex-start;
+        
+	}
+}
+
+.plitka-item {
+    color: #000;
+    @include flexbox();
+    flex-direction: column;
+    flex: 0 0 31%;
+    margin: 0 10px;
+    background-color: #efefef;
+    font-size: 15px;
+    padding: 10px;
+    
+    margin-bottom: 20px;
+    @media (max-width:$md1+px) {
+        flex: 0 0 30%;  
+    }
+    @media (max-width:$md2+px) {
+        flex: 0 0 45%;  
+    }
+    @media (max-width:$md4+px) {
+        flex: 0 0 95%;  
+	}
+    
+}
+.plitka-item__image {
+    background: url(../img/detailsbmw/01.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 70%;
+    margin-bottom: 13px;
+}
+.plitka-item__title {
+    margin-bottom: 10px;
+    color: #000;
+}
+.art-green {
+    color: green;
+}
+.plitka-item__image--1 {
+    background: url(../img/detailsbmw/01.jpg) no-repeat;
+    background-size: cover;
+}
+.plitka-item__image--2 {
+    background: url(../img/detailsbmw/02.jpg) no-repeat;
+    background-size: cover;
+}
+.plitka-item__image--3 {
+    background: url(../img/detailsbmw/03.jpg) no-repeat;
+    background-size: cover;
+}
+.plitka-item__image--4 {
+    background: url(../img/detailsbmw/04.jpg) no-repeat;
+    background-size: cover;
+}
+.plitka-item__image--5 {
+    background: url(../img/detailsbmw/05.jpg) no-repeat;
+    background-size: cover;
+}
